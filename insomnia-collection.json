@@ -1,0 +1,398 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2025-09-26T10:00:00.000Z",
+  "__export_source": "insomnia.desktop.app:v9.0.0",
+  "resources": [
+    {
+      "_id": "req_usuarios_create",
+      "parentId": "fld_usuarios",
+      "modified": 1727344800000,
+      "created": 1727344800000,
+      "url": "{{ _.baseUrl }}/usuarios",
+      "name": "Criar Usuário",
+      "description": "Cria um novo usuário no sistema",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"name\": \"João Silva\",\n  \"email\": \"joao@email.com\",\n  \"password\": \"123456\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_content_type"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1727344800000,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "_type": "request"
+    },
+    {
+      "_id": "req_usuarios_list",
+      "parentId": "fld_usuarios",
+      "modified": 1727344800000,
+      "created": 1727344800000,
+      "url": "{{ _.baseUrl }}/usuarios",
+      "name": "Listar Usuários",
+      "description": "Lista todos os usuários cadastrados",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -1727344799000,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "_type": "request"
+    },
+    {
+      "_id": "req_usuarios_update",
+      "parentId": "fld_usuarios",
+      "modified": 1727344800000,
+      "created": 1727344800000,
+      "url": "{{ _.baseUrl }}/usuarios/1",
+      "name": "Atualizar Usuário",
+      "description": "Atualiza os dados de um usuário específico",
+      "method": "PUT",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"name\": \"João Santos\",\n  \"email\": \"joao.santos@email.com\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_content_type"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1727344798000,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "_type": "request"
+    },
+    {
+      "_id": "req_usuarios_delete",
+      "parentId": "fld_usuarios",
+      "modified": 1727344800000,
+      "created": 1727344800000,
+      "url": "{{ _.baseUrl }}/usuarios/1",
+      "name": "Deletar Usuário",
+      "description": "Remove um usuário do sistema",
+      "method": "DELETE",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -1727344797000,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "_type": "request"
+    },
+    {
+      "_id": "req_products_create",
+      "parentId": "fld_products",
+      "modified": 1727344800000,
+      "created": 1727344800000,
+      "url": "{{ _.baseUrl }}/products",
+      "name": "Criar Produto",
+      "description": "Cria um novo produto",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"name\": \"Smartphone\",\n  \"price\": 899.99,\n  \"storeId\": 1\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_content_type"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1727344796000,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "_type": "request"
+    },
+    {
+      "_id": "req_products_list",
+      "parentId": "fld_products",
+      "modified": 1727344800000,
+      "created": 1727344800000,
+      "url": "{{ _.baseUrl }}/products",
+      "name": "Listar Produtos",
+      "description": "Lista todos os produtos com informações da loja e usuário",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -1727344795000,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "_type": "request"
+    },
+    {
+      "_id": "req_products_update",
+      "parentId": "fld_products",
+      "modified": 1727344800000,
+      "created": 1727344800000,
+      "url": "{{ _.baseUrl }}/products/1",
+      "name": "Atualizar Produto",
+      "description": "Atualiza os dados de um produto específico",
+      "method": "PUT",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"name\": \"Smartphone Galaxy\",\n  \"price\": 999.99\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_content_type"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1727344794000,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "_type": "request"
+    },
+    {
+      "_id": "req_products_delete",
+      "parentId": "fld_products",
+      "modified": 1727344800000,
+      "created": 1727344800000,
+      "url": "{{ _.baseUrl }}/products/1",
+      "name": "Deletar Produto",
+      "description": "Remove um produto do sistema",
+      "method": "DELETE",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -1727344793000,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "_type": "request"
+    },
+    {
+      "_id": "req_stores_create",
+      "parentId": "fld_stores",
+      "modified": 1727344800000,
+      "created": 1727344800000,
+      "url": "{{ _.baseUrl }}/stores",
+      "name": "Criar Loja",
+      "description": "Cria uma nova loja",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"name\": \"Loja Tech\",\n  \"userId\": 1\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_content_type"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1727344792000,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "_type": "request"
+    },
+    {
+      "_id": "req_stores_list",
+      "parentId": "fld_stores",
+      "modified": 1727344800000,
+      "created": 1727344800000,
+      "url": "{{ _.baseUrl }}/stores",
+      "name": "Listar Lojas",
+      "description": "Lista todas as lojas com dados do usuário e produtos",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -1727344791000,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "_type": "request"
+    },
+    {
+      "_id": "req_stores_get",
+      "parentId": "fld_stores",
+      "modified": 1727344800000,
+      "created": 1727344800000,
+      "url": "{{ _.baseUrl }}/stores/1",
+      "name": "Buscar Loja por ID",
+      "description": "Busca uma loja específica com dados do usuário e produtos",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -1727344790000,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "_type": "request"
+    },
+    {
+      "_id": "req_stores_update",
+      "parentId": "fld_stores",
+      "modified": 1727344800000,
+      "created": 1727344800000,
+      "url": "{{ _.baseUrl }}/stores/1",
+      "name": "Atualizar Loja",
+      "description": "Atualiza os dados de uma loja específica",
+      "method": "PUT",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"name\": \"Tech Store Premium\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_content_type"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1727344789000,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "_type": "request"
+    },
+    {
+      "_id": "req_stores_delete",
+      "parentId": "fld_stores",
+      "modified": 1727344800000,
+      "created": 1727344800000,
+      "url": "{{ _.baseUrl }}/stores/1",
+      "name": "Deletar Loja",
+      "description": "Remove uma loja do sistema",
+      "method": "DELETE",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -1727344788000,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "_type": "request"
+    },
+    {
+      "_id": "fld_usuarios",
+      "parentId": "wrk_main",
+      "modified": 1727344800000,
+      "created": 1727344800000,
+      "name": "👥 Usuários",
+      "description": "Operações relacionadas aos usuários",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1727344800000,
+      "_type": "request_group"
+    },
+    {
+      "_id": "fld_products",
+      "parentId": "wrk_main",
+      "modified": 1727344800000,
+      "created": 1727344800000,
+      "name": "📦 Produtos",
+      "description": "Operações relacionadas aos produtos",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1727344799000,
+      "_type": "request_group"
+    },
+    {
+      "_id": "fld_stores",
+      "parentId": "wrk_main",
+      "modified": 1727344800000,
+      "created": 1727344800000,
+      "name": "🏪 Lojas",
+      "description": "Operações relacionadas às lojas",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1727344798000,
+      "_type": "request_group"
+    },
+    {
+      "_id": "wrk_main",
+      "parentId": null,
+      "modified": 1727344800000,
+      "created": 1727344800000,
+      "name": "Projeto 3º Bimestre - API",
+      "description": "API REST para gerenciamento de usuários, lojas e produtos",
+      "scope": "collection",
+      "_type": "workspace"
+    },
+    {
+      "_id": "env_base",
+      "parentId": "wrk_main",
+      "modified": 1727344800000,
+      "created": 1727344800000,
+      "name": "Base Environment",
+      "data": {
+        "baseUrl": "http://localhost:3000"
+      },
+      "dataPropertyOrder": {
+        "&": ["baseUrl"]
+      },
+      "color": null,
+      "isPrivate": false,
+      "metaSortKey": 1727344800000,
+      "_type": "environment"
+    }
+  ]
+}
